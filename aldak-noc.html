@@ -2368,7 +2368,7 @@ const GRUPOS_SUBGRUPOS = {
   'REDE':          ['ERB','FIBRA','INTERNET','LINK','ODU','POP PROTECT ALG COM','POP PROTECT VOLT','REDE','REGUA POE','REPETIDORA','ROTEADOR','SITE','SWITCH','DIMETRA'],
   'SERVIDOR':      ['DIMETRA','MSO','BSCU','DELL','HP','ALCON','MRPS','HYTALK'],
   'SISTEMA':       ['REPETIDORA','ERB','PORTADORA','CONTROLADORA','P.A','APLIFICADOR DE RX','FILTRO NOTCH','FILTRO TRAP','COMBINADOR','HÍBRIDA','ISOLADOR','FILTRO DE RX','ANTTENA INTERFACE','GPS'],
-}};
+};
 const SISTEMAS_DISP = ['DIMETRA','DISPATCH DAMM','TRBONET','REMOTATEC','SMART DISPATCH PLUS','SMART ONE','MRPS','HYTALK','MAMUT','TELEGRAF','DAMM MONITOR','ITM MOTOROLA','RM SEPURA','RM MOTOROLA','NM DIMETRA','NEXETALK'];
 const PROTOCOLOS_DISP = ['MOTOROLA TETRA','MOTOROLA DIGITAL','MOTOROLA ANALOGICO','MOTOROLA SMARTONE','DAMM','SEPURA','HYTERA','CARRETA','EQUIPAMENTOS DE TI'];
 
@@ -2597,25 +2597,8 @@ function esconderLoading() {
   if (ls)  { ls.classList.add('hidden'); ls.style.display = 'none'; }
   if (app) { app.style.visibility = 'visible'; app.style.display = ''; }
 }
-  if (typeof STATE !== 'undefined' && STATE._loadingTimeout) { clearTimeout(STATE._loadingTimeout); STATE._loadingTimeout = null; }
-  var ls  = document.getElementById('loadingScreen');
-  var app = document.getElementById('app');
-  if (ls)  { ls.classList.add('hidden'); ls.style.display = 'none'; }
-  if (app) { app.style.visibility = 'visible'; app.style.display = ''; }
-  // Garante painel de detalhes fechado ao iniciar
-  var dp = document.getElementById('detailPanel');
-  if (dp) { dp.classList.remove('show'); dp.style.display = 'none'; }
-}
-  const ls  = document.getElementById('loadingScreen');
-  const app = document.getElementById('app');
-  if (ls)  { ls.classList.add('hidden'); ls.style.display  = 'none'; }
-  if (app) { app.style.visibility = 'visible'; app.style.display = ''; }
-}
-  const ls = document.getElementById('loadingScreen');
-  const app = document.getElementById('app');
-  if (ls) { ls.classList.add('hidden'); ls.style.display = 'none'; }
-  if (app) { app.style.visibility = 'visible'; app.style.display = ''; }
-}
+
+
 
 // ============================================================
 // SINO DE NOTIFICAÇÕES
